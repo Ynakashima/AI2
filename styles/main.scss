@@ -1,0 +1,46 @@
+@import "./_default_variables";
+
+.wrapper {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.hero-and-title-container {
+  border: 3px solid red;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.photo-wrapper > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.article-title {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  color: $text-color-main;
+  font-family: $roboto-slab;
+}
+
+
+.article-info {
+  border: 3px solid blue;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.text-content {
+  border: 3px solid red;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 3;
+  grid-row-end: span 5;
+}
