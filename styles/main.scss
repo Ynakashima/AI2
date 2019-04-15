@@ -35,6 +35,28 @@
   grid-column-end: span 3;
   grid-row-start: 2;
   grid-row-end: 2;
+
+  .author-name {
+    font-family: $roboto-slab;
+    color: $text-color-brown;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .publication-details {
+    font-family: $roboto-regular;
+    font-size: 14px;
+    color: $info-text-color;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .genre-button {
+    
+  }
 }
 
 .text-content {
