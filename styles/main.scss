@@ -2,8 +2,9 @@
 
 .wrapper {
   display: grid;
+  height: 100%;
   grid-template-columns:  1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .hero-and-title-container {
@@ -14,10 +15,14 @@
   grid-row-end: 1;
 }
 
+.photo-wrapper {
+  height:150px;
+}
+
 .photo-wrapper > img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
 .article-title {
@@ -26,6 +31,7 @@
   font-style: normal;
   color: $text-color-main;
   font-family: $roboto-slab;
+  text-align: center;
 }
 
 
@@ -35,6 +41,7 @@
   grid-column-end: span 3;
   grid-row-start: 2;
   grid-row-end: 2;
+  text-align: center;
 
   .author-name {
     font-family: $roboto-slab;
@@ -71,9 +78,11 @@
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 3;
-  grid-row-end: span 5;
+  grid-row-end: 8;
   font-family: $roboto-regular;
   color: $text-color-main;
+  padding-left: 15px;
+  padding-right: 15px;
 
   .last-question-1 {
     font-size: 20px;
@@ -81,7 +90,7 @@
     font-style: normal;
   }
 
-  .adell-bertram-2 {
+  .general-content {
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
