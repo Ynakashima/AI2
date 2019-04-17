@@ -80,12 +80,12 @@
   border: solid 1px #ccd6dc;
   background-color: #667a86;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: #ffffff;
   font-size: 12px;
 }
 
 .text-content {
-  border: 3px solid red;
   height: 100%;
   -ms-grid-column: 1;
       grid-column-start: 1;
