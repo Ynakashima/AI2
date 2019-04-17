@@ -4,11 +4,11 @@
   display: grid;
   height: 100%;
   grid-template-columns:  1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.45fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .hero-and-title-container {
-  border: 3px solid red;
+  // border: 3px solid red;
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 1;
@@ -36,12 +36,15 @@
 
 
 .article-info {
-  border: 3px solid blue;
+  border-top: 1px solid $line-color;
+  border-bottom: 1px solid $line-color;
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 2;
   grid-row-end: 2;
   text-align: center;
+  margin-left: 18px;
+  margin-right: 18px;
 
   .author-name {
     font-family: $roboto-slab;
@@ -75,14 +78,15 @@
 
 .text-content {
   border: 3px solid red;
+  height: 100%;
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 3;
-  grid-row-end: 8;
+  grid-row-end: span 7;
   font-family: $roboto-regular;
   color: $text-color-main;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 18px;
+  padding-right: 18px;
 
   .last-question-1 {
     font-size: 20px;
@@ -103,5 +107,18 @@
     font-size: 20px;
     font-weight: bold;
     font-style: normal;
+  }
+
+  .slowly-multivac-4 {
+    border-top: 1px solid $line-color2;
+    border-bottom: 1px solid $line-color2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: $roboto-regular;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
   }
 }
