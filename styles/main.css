@@ -25,7 +25,6 @@
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  border: 2px solid blue;
 }
 
 .photo-wrapper {
@@ -38,7 +37,6 @@
       grid-row-start: 1;
   -ms-grid-row-span: 2;
       grid-row-end: span 2;
-  border: 3px solid orangered;
 }
 
 .photo-wrapper > img {
@@ -109,6 +107,64 @@
   font-size: 12px;
 }
 
+.article-info .genre-button:hover {
+  background-color: #60a4cc;
+}
+
+.text-content {
+  height: 100%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 3;
+      grid-column-end: span 3;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-row-span: 8;
+      grid-row-end: span 8;
+  font-family: "Roboto", sans-serif;
+  color: #18394d;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.text-content .last-question-1 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+.text-content .general-content {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.63;
+}
+
+.text-content .general-content .face-link {
+  color: #753b15;
+}
+
+.text-content .multivac-background {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-content .slowly-multivac-4 {
+  border-top: 1px solid #f0d8a1;
+  border-bottom: 1px solid #f0d8a1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+}
+
 @media screen and (min-width: 750px) {
   .wrapper {
     display: -ms-grid;
@@ -116,8 +172,8 @@
     height: 100%;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 400px 0.3fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 400px 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 400px 120px 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 120px 1fr 1fr 1fr 1fr 1fr;
   }
   .hero-and-title-container {
     -ms-grid-column: 1;
@@ -134,7 +190,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid blue;
   }
   .photo-wrapper {
     height: 400px;
@@ -172,10 +227,9 @@
         grid-column-end: span 3;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    -ms-grid-row-span: 2;
-        grid-row-end: span 2;
-    margin-left: 18px;
-    margin-right: 18px;
+    grid-row-end: 2;
+    margin-left: 60px;
+    margin-right: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -228,55 +282,50 @@
     color: #ffffff;
     font-size: 12px;
   }
-}
-
-.text-content {
-  height: 100%;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-column-span: 3;
-      grid-column-end: span 3;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
-  -ms-grid-row-span: 8;
-      grid-row-end: span 8;
-  font-family: "Roboto", sans-serif;
-  color: #18394d;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.text-content .last-question-1 {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.4;
-}
-
-.text-content .general-content {
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.63;
-}
-
-.text-content .multivac-background {
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
-}
-
-.text-content .slowly-multivac-4 {
-  border-top: 1px solid #f0d8a1;
-  border-bottom: 1px solid #f0d8a1;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.4;
-  text-align: center;
+  .text-content {
+    height: 100%;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 7;
+        grid-row-end: span 7;
+    font-family: "Roboto", sans-serif;
+    color: #18394d;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .text-content .last-question-1 {
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.38;
+  }
+  .text-content .general-content {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+  }
+  .text-content .multivac-background {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .text-content .slowly-multivac-4 {
+    border-top: 1px solid #f0d8a1;
+    border-bottom: 1px solid #f0d8a1;
+    padding-top: 29px;
+    padding-bottom: 24.5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.25;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
