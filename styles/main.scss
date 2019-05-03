@@ -5,6 +5,7 @@
   height: 100%;
   grid-template-columns:  1fr 1fr 1fr;
   grid-template-rows: 150px 0.3fr 0.45fr 1fr 1fr 1fr 1fr 1fr 6px;
+  margin: 0;
 }
 
 .hero-and-title-container {
@@ -14,7 +15,7 @@
   grid-row-end: span 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 1fr;
 }
 
 .photo-wrapper {
@@ -34,7 +35,7 @@
 }
 
 .article-title {
-  font-size: 36px;
+  font-size: 10vw;
   font-weight: bold;
   font-style: normal;
   color: $text-color-main;
@@ -44,6 +45,9 @@
   grid-column-end: span 3;
   grid-row-start: 3;
   grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-info {
@@ -60,7 +64,7 @@
   .author-name {
     font-family: $roboto-slab;
     color: $text-color-brown;
-    font-size: 16px;
+    font-size: 4.2vw;
     font-weight: normal;
     font-style: normal;
     text-align: center;
@@ -68,7 +72,7 @@
 
   .publication-details {
     font-family: $roboto-regular;
-    font-size: 14px;
+    font-size: 3.7vw;
     color: $info-text-color;
     font-weight: normal;
     font-style: normal;
@@ -84,7 +88,7 @@
     font-family: $roboto-regular;
     font-weight: 300;
     color: $background-color;
-    font-size: 12px;
+    font-size: 3.2vw;
   }
 
   .genre-button:hover {
@@ -104,14 +108,14 @@
   padding-right: 18px;
 
   .last-question-1 {
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: 300;
     font-style: normal;
     line-height: 1.4;
   }
 
   .general-content {
-    font-size: 16px;
+    font-size: 4.1vw;
     font-weight: 300;
     font-style: normal;
     line-height: 1.63;
@@ -123,7 +127,7 @@
 
   .multivac-background {
     font-family: $roboto-slab;
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: bold;
     font-style: normal;
   }
@@ -134,7 +138,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: $roboto-regular;
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: 300;
     font-style: italic;
     line-height: 1.4;
@@ -155,7 +159,7 @@
     display: grid;
     height: 100%;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 400px 120px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 24vh 7.5vh 1fr 1fr 1fr 1fr 1fr;
   }
 
   .hero-and-title-container {
@@ -169,7 +173,7 @@
   }
 
   .photo-wrapper {
-    height: 400px;
+    height: 24vh;
     grid-column-start: 1;
     grid-column-end: span 3;
     grid-row-start: 1;
@@ -177,11 +181,11 @@
   }
 
   .article-title {
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: bold;
     font-style: normal;
+    height: 3.6vh;
     color: $line-color2;
-    height: 53px;
     text-align: left;
     padding-left: 8%;
     grid-column-start: 1;
@@ -196,8 +200,8 @@
     grid-column-end: span 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 5.9vw;
+    margin-right: 5.9vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,7 +217,7 @@
     .author-name {
       font-family: $roboto-slab;
       color: $text-color-brown;
-      font-size: 20px;
+      font-size: 1.9vw;
       font-weight: normal;
       font-style: normal;
       margin-bottom: 0px;
@@ -222,7 +226,7 @@
   
     .publication-details {
       font-family: $roboto-regular;
-      font-size: 16px;
+      font-size: 1.5vw;
       color: $info-text-color;
       font-weight: normal;
       font-style: normal;
@@ -250,18 +254,18 @@
     grid-row-end: span 7;
     font-family: $roboto-regular;
     color: $text-color-main;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 5.9vw;
+    padding-right: 5.9vw;
   
     .last-question-1 {
-      font-size: 26px;
+      font-size: 2.5vw;
       font-weight: 300;
       font-style: normal;
       line-height: 1.38;
     }
   
     .general-content {
-      font-size: 20px;
+      font-size: 1.9vw;
       font-weight: 300;
       font-style: normal;
       line-height: 1.5;
@@ -280,7 +284,7 @@
       padding-top: 29px;
       padding-bottom: 24.5px;
       font-family: $roboto-regular;
-      font-size: 24px;
+      font-size: 2.3vw;
       font-weight: 300;
       font-style: italic;
       line-height: 1.25;
@@ -331,23 +335,22 @@
 
   .article-info {
     grid-column-start: 1;
-    grid-column-end: span 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: span 4;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid blue;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // border: 2px solid blue;
 
     .author-deets-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      // border: 2px dotted teal;
+      align-items: flex-end;
+      // border: 2px dotted magenta;
     }
 
     .author-name {
@@ -367,6 +370,19 @@
       font-weight: normal;
       font-style: normal;
       margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      // border: 2px solid green;
+      
+      .sci-fi {
+        padding-top: 2%;
+      }
+    }
+
+    .deets-dot {
+      display: none;
     }
   
     .genre-button {
@@ -383,6 +399,7 @@
   }
 
   .text-content {
+    border: 2px solid fuchsia;
     height: 100%;
     grid-column-start: 2;
     grid-column-end: span 3;
@@ -390,8 +407,6 @@
     grid-row-end: span 4;
     font-family: $roboto-regular;
     color: $text-color-main;
-    padding-left: 60px;
-    padding-right: 60px;
   
     .last-question-1 {
       font-size: 26px;
