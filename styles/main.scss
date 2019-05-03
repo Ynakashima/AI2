@@ -154,7 +154,7 @@
   background-color: $box-shadow-color;
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:750px) and (max-width:1199px) {
   .wrapper {
     display: grid;
     height: 100%;
@@ -211,7 +211,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      // border: 2px dotted teal;
     }
 
     .author-name {
@@ -221,7 +220,6 @@
       font-weight: normal;
       font-style: normal;
       margin-bottom: 0px;
-      // border: 2px solid brown;
     }
   
     .publication-details {
@@ -298,7 +296,7 @@
     display: grid;
     height: 100%;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 400px 1fr 1fr 1fr;
+    grid-template-rows: 33vh 1fr 1fr 1fr;
   }
 
   .hero-and-title-container {
@@ -309,11 +307,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid red;
   }
 
   .photo-wrapper {
-    height: 400px;
+    height: 33vh;
     grid-column-start: 1;
     grid-column-end: span 3;
     grid-row-start: 1;
@@ -321,16 +318,20 @@
   }
 
   .article-title {
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: bold;
     font-style: normal;
     color: $line-color2;
-    height: 53px;
-    text-align: left;
+    height: 3.8vh;
     grid-column-start: 2;
     grid-column-end: span 2;
     grid-row-start: 3;
     grid-row-end: span 3;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1vh;
+    padding-left: 2.6vw;
+    padding-bottom: 1vh;
   }
 
   .article-info {
@@ -343,14 +344,13 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    // border: 2px solid blue;
+    border: 0;
 
     .author-deets-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
-      // border: 2px dotted magenta;
     }
 
     .author-name {
@@ -360,7 +360,6 @@
       font-weight: normal;
       font-style: normal;
       margin-bottom: 0px;
-      // border: 2px solid brown;
     }
   
     .publication-details {
@@ -374,7 +373,6 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
-      // border: 2px solid green;
       
       .sci-fi {
         padding-top: 2%;
@@ -399,7 +397,6 @@
   }
 
   .text-content {
-    border: 2px solid fuchsia;
     height: 100%;
     grid-column-start: 2;
     grid-column-end: span 3;
@@ -407,16 +404,17 @@
     grid-row-end: span 4;
     font-family: $roboto-regular;
     color: $text-color-main;
+    padding-left: 2.6vw;
   
     .last-question-1 {
-      font-size: 26px;
+      font-size: 1.6vw;
       font-weight: 300;
       font-style: normal;
       line-height: 1.38;
     }
   
     .general-content {
-      font-size: 20px;
+      font-size: 1.3vw;
       font-weight: 300;
       font-style: normal;
       line-height: 1.5;
@@ -424,7 +422,7 @@
   
     .multivac-background {
       font-family: $roboto-slab;
-      font-size: 24px;
+      font-size: 1.5vw;
       font-weight: bold;
       font-style: normal;
     }
@@ -434,8 +432,10 @@
       border-bottom: 1px solid $line-color2;
       padding-top: 29px;
       padding-bottom: 24.5px;
+      padding-left: 1.8vw;
+      padding-right: 1.8vw;
       font-family: $roboto-regular;
-      font-size: 24px;
+      font-size: 1.6vw;
       font-weight: 300;
       font-style: italic;
       line-height: 1.25;

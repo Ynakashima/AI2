@@ -187,7 +187,7 @@
   background-color: #1b2f3b;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1199px) {
   .wrapper {
     display: -ms-grid;
     display: grid;
@@ -358,8 +358,8 @@
     height: 100%;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 400px 1fr 1fr 1fr;
-        grid-template-rows: 400px 1fr 1fr 1fr;
+    -ms-grid-rows: 33vh 1fr 1fr 1fr;
+        grid-template-rows: 33vh 1fr 1fr 1fr;
   }
   .hero-and-title-container {
     -ms-grid-column: 1;
@@ -376,10 +376,9 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid red;
   }
   .photo-wrapper {
-    height: 400px;
+    height: 33vh;
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 3;
@@ -390,12 +389,11 @@
         grid-row-end: span 3;
   }
   .article-title {
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: bold;
     font-style: normal;
     color: #f0d8a1;
-    height: 53px;
-    text-align: left;
+    height: 3.8vh;
     -ms-grid-column: 2;
         grid-column-start: 2;
     -ms-grid-column-span: 2;
@@ -404,6 +402,15 @@
         grid-row-start: 3;
     -ms-grid-row-span: 3;
         grid-row-end: span 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 1vh;
+    padding-left: 2.6vw;
+    padding-bottom: 1vh;
   }
   .article-info {
     -ms-grid-column: 1;
@@ -427,6 +434,7 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    border: 0;
   }
   .article-info .author-deets-wrapper {
     display: -webkit-box;
@@ -490,7 +498,6 @@
     font-size: 12px;
   }
   .text-content {
-    border: 2px solid fuchsia;
     height: 100%;
     -ms-grid-column: 2;
         grid-column-start: 2;
@@ -502,22 +509,23 @@
         grid-row-end: span 4;
     font-family: "Roboto", sans-serif;
     color: #18394d;
+    padding-left: 2.6vw;
   }
   .text-content .last-question-1 {
-    font-size: 26px;
+    font-size: 1.6vw;
     font-weight: 300;
     font-style: normal;
     line-height: 1.38;
   }
   .text-content .general-content {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
   }
   .text-content .multivac-background {
     font-family: "Roboto Slab", sans-serif;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: bold;
     font-style: normal;
   }
@@ -526,8 +534,10 @@
     border-bottom: 1px solid #f0d8a1;
     padding-top: 29px;
     padding-bottom: 24.5px;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 1.6vw;
     font-weight: 300;
     font-style: italic;
     line-height: 1.25;
